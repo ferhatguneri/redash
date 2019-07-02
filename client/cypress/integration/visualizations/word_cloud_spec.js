@@ -83,6 +83,9 @@ describe('Word Cloud', () => {
 
     cy.getByTestId('VisualizationPreview').find('svg text').should('have.length', 2);
 
+    cy.screenshot();
+
     cy.percySnapshot('Visualizations - Word Cloud (With filters)');
+    cy.percySnapshot('Visualizations - Word Cloud (With filters) - Test', { widths: [1000] });
   });
 });
