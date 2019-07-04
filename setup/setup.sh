@@ -3,7 +3,7 @@
 set -eu
 
 REDASH_BASE_PATH=/opt/redash
-
+apt-get install -y pwgen
 install_docker(){
     # Install Docker
     sudo apt-get update
